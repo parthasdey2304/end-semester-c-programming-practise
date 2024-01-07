@@ -2,13 +2,21 @@
 #include <string.h>
 
 int main() {
-	char st[50] = "Partha";
-	char rev[50] = "";
+	char st[100]; // string declaration
 
-	for(int i = 0; st[i] != '\0'; i++) {
-		rev = st[i] + rev;
+	printf("Enter a string : ");	
+	fgets(st, sizeof(st), stdin); // taking a string input
+	
+	printf("The length of the string is : %d.\n", strlen(st) - 1);
+
+	/*
+	int length = 0;
+	while(st[length] != '\0') {
+		length++;
 	}
 
-	printf("The reverse of the string is : %s", rev);
+	printf("Length : %d.\n", length);
+	*/
+
 	return 0;
 }
