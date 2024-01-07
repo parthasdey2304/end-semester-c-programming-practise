@@ -18,5 +18,10 @@ int main() {
 	printf("Length : %d.\n", length);
 	*/
 
+	printf("The Characters of the string are : ");
+	for(int i = 0; i < strlen(st) - 1; i++) {
+		printf("%c, ", st[i]);
+	}
+
 	return 0;
 }
