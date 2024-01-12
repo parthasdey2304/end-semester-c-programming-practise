@@ -781,6 +781,7 @@ The prime numbers between 1 and 50 are : 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31,
 
 ## 23. Check Prime Using User-defined Function
 Develop a C program that uses a user-defined function to check whether a given number is prime or not.
+### Code
 ``` c
 #include <stdio.h>
 #include <stdbool.h>
@@ -817,10 +818,15 @@ int main() {
 }
 
 ```
-
+### Output
+```
+Enter a number: 23
+23 is a prime number.
+```
 
 ## 24. Find the Sum of Natural Numbers using Recursion
 Write a C program to find the sum of the first N natural numbers using recursion.
+### Code
 ``` c
 #include <stdio.h>
 
@@ -843,10 +849,15 @@ int main() {
     printf("The sum of %d natural numbers is : %d.\n", n, sum_of_n(n));
 }
 ```
-
+### Output
+```
+Enter a number : 5
+The sum of 5 natural numbers is : 15.
+```
 
 ## 25. Find Factorial of a Number Using Recursion
 Develop a C program to find the factorial of a given number using a recursive function.
+### Code
 ``` c
 #include <stdio.h>
 
@@ -865,10 +876,15 @@ int main() {
     return 0;
 }
 ```
-
+### Output
+```
+Enter a number : 4
+The factorial of 4 is : 24.
+```
 
 ## 26. Find G.C.D Using Recursion
 Create a C program to find the Greatest Common Divisor (GCD) of two numbers using a recursive function.
+### Code
 ``` c
 #include <stdio.h>
 
@@ -889,10 +905,17 @@ int main() {
     return 0;
 }
 ```
+### Output
+```
+Enter the first number : 25
+Enter the second number : 4
 
+The GCD of 25 and 4 is 1.
+```
 
 ## 27. Convert Binary Number to Decimal and vice-versa
 Implement a C program that converts a binary number to its decimal equivalent and vice versa.
+### Code
 ``` c
 #include <stdio.h>
 
@@ -958,10 +981,19 @@ int main() {
 }
 
 ```
-
+### Output
+```
+Choose an option:
+1. Decimal to Binary
+2. Binary to Decimal
+Enter your choice (1 or 2): 2
+Enter a binary number: 1011
+Decimal equivalent: 11
+```
 
 ## 28. Calculate Power Using Recursion
 Write a C program to calculate the power of a number using recursion. Take the base and exponent as input.
+### Code
 ``` c
 #include <stdio.h>
 
@@ -982,10 +1014,17 @@ int main() {
     return 0;
 }
 ```
+### Output
+```
+Enter the base : 5
+Enter the exponent : 3
+The number 5 raised to the power 3 is : 125.
+```
 
 
 ## 29. Calculate Average Using Arrays
 Develop a C program to calculate and display the average of elements in an array.
+### Code
 ``` c
 #include <stdio.h>
 
@@ -1008,10 +1047,20 @@ int main() {
     return 0;
 }
 ```
-
+### Output
+```
+Enter the length of the array : 5
+Enter the array elements : 1
+2
+3
+4
+5
+The average of the array elements is : 3.
+```
 
 ## 30. Find Largest Element of an Array
 Create a C program to find and display the largest element in an array.
+### Code
 ``` c
 #include <stdio.h>
 
@@ -1041,10 +1090,20 @@ int main() {
     return 0;
 }
 ```
-
+### Output
+```
+Enter the length of the array : 5
+Enter the array elements : 1
+2
+3
+4
+5
+The largest element of the array is : 5.
+```
 
 ## 31. Add Two Matrix Using Multi-dimensional Arrays
 Write a C program to add two matrices using multi-dimensional arrays. Display the result.
+### Code
 ``` c
 #include <stdio.h>
 
@@ -1093,10 +1152,28 @@ int main() {
     return 0;
 }
 ```
-
+### Output
+```
+Enter the number of rows : 2
+Enter the number of columns : 2
+Enter the elements of the first matrix :
+1
+2
+3
+4
+Enter the elements of the second matrix :
+5
+6
+7
+8
+The sum of the two matrices is :
+6 8
+10 12
+```
 
 ## 32. Find Transpose of a Matrix
 Develop a C program to find the transpose of a matrix. Display both the original and transposed matrices.
+### Code
 ``` c
 #include <stdio.h>
 
@@ -1141,10 +1218,28 @@ int main() {
 }
 
 ```
+### Output
+```
+Enter the number of rows: 2
+Enter the number of columns: 2
+Enter the elements of the matrix:
+1
+2
+3
+4
 
+The Original matrix is:
+1 2
+3 4
+
+The Transpose of the matrix is:
+1 3
+2 4
+```
 
 ## 33. Multiply two Matrices by Passing Matrix to a Function
 Implement a C program that multiplies two matrices by passing them to a function. Display the original matrices and the result.
+### Code
 ``` c
 #include <stdio.h>
 
@@ -1226,7 +1321,36 @@ int main() {
 }
 
 ```
+### Output
+```
+Enter rows and columns for the first matrix: 2
+2
+Enter elements for the first matrix:
+Enter element a11 : 1
+Enter element a12 : 2
+Enter element a21 : 3
+Enter element a22 : 4
 
+Enter rows and columns for the second matrix: 2
+2
+Enter elements for the second matrix:
+Enter element b11 : 5
+Enter element b12 : 6
+Enter element b21 : 7
+Enter element b22 : 8
+
+First Matrix:
+1 2
+3 4
+
+Second Matrix:
+5 6
+7 8
+
+Resultant Matrix:
+19 22
+43 50
+```
 
 ## 34. Access Elements of an Array Using Pointer
 Write a C program to access elements of an array using pointers. Display the elements using pointer arithmetic.
