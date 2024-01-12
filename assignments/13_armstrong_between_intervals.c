@@ -26,7 +26,7 @@ int main() {
 
         if(i == sum) {
             printf("%d, ", i);
-        } -c
+        }
 
         len = 0; sum = 0;
     }
