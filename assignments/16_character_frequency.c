@@ -17,6 +17,8 @@ int main() {
     printf("Enter a string : ");
     fgets(st, sizeof(st), stdin);
 
+      printf("\nThe frequency of characters is : \n");
+
     for(ch = 'a'; ch <= 'z'; ch++) {
         c = 0;
         for(i = 0; st[i] != '\0'; i++) {

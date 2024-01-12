@@ -17,6 +17,11 @@ int main() {
             newst[a] = st[i];
             a++;
         }
+
+        if(st[i] == ' ') {
+            newst[a] == ' ';
+            a++:
+        }
     }
 
     printf("The new string after removing all the non alphabets is : %s", newst);
