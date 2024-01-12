@@ -1412,38 +1412,125 @@ Create a C program to multiply two matrices using multi-dimensional arrays. Disp
 
 ## 36. Write a Recursive Function to Find the Sum of n Natural Numbers
 Develop a C program that uses a recursive function to find the sum of the first N natural numbers.
-``` c
-
-```
+### This Question has been repeated twice. Refer to `Q24`.
 
 
 ## 37. Program to Calculate Power (ab) using Recursion
 Write a C program to calculate the power (ab) using recursion. Take the base and exponent as input.
-``` c
-
-```
-
+### This Question has been repeated twice. Refer to `Q28`.
 
 ## 38. Program to Concatenate Two Inputted Strings Without Using strcat()
 Implement a C program to concatenate two inputted strings without using the strcat() function.
-``` c
-
-```
-
+### This Question has been repeated twice. Refer to `Q20`.
 
 ## 39. Program to Check Whether a Given String is a Palindrome or Not
 Create a C program to check whether a given string is a palindrome or not. Ignore case sensitivity.
+### Code
 ``` c
+#include <stdio.h>
+#include <string.h>
+#include <stdbool.h>
 
+bool isPalindrome(char str[]) {
+    int len = strlen(str);
+    for (int i = 0; i < len / 2; i++) {
+        if (str[i] != str[len - 1 - i]) {
+            return false;
+        }
+    }
+    return true;
+}
+
+int main() {
+    char inputString[100];
+
+    printf("Enter a string: ");
+    fgets(inputString, sizeof(inputString), stdin);
+
+    // Removing the newline character '\n' from the input
+    inputString[strcspn(inputString, "\n")] = '\0';
+
+    if (isPalindrome(inputString)) {
+        printf("The string is a palindrome.\n");
+    } else {
+        printf("The string is not a palindrome.\n");
+    }
+
+    return 0;
+}
+```
+### Output
+```
+Enter a string: MOM
+The string is a palindrome.
 ```
 
 
 ## 40. Program to Find the Sum of Two Diagonals of a Square Matrix
 Write a C program to find and display the sum of the two diagonals of a square matrix.
+### Code
 ``` c
+#include <stdio.h>
 
+int main() {
+    int rows, i, j, sum_left = 0, sum_right = 0;
+
+    printf("Enter the number of rows : ");
+    scanf("%d", &rows);
+
+    printf("Enter the matrix elements : ");
+    int arr[rows][rows];
+    for (i = 0; i < rows; i++) {
+        for (j = 0; j < rows; j++) {
+            scanf("%d", &arr[i][j]);
+        }
+    }
+
+    printf("\nThe Matrix is : \n");
+
+    for(i = 0; i < rows; i++) {
+        for(j = 0; j < rows; j++) {
+            printf("%d ", arr[i][j]);
+        }
+        printf("\n");
+    }
+
+    for(i = 0; i < rows; i++) {
+        for(j = 0; j < rows; j++) {
+            if(i == j) {
+                sum_left += arr[i][j];
+            }
+            if(i + j == rows - 1) {
+                sum_right += arr[i][j];
+            }
+        }
+    }
+
+    printf("The sum of the left diagonal elements is : %d.\nThe sum of the right diagonal elements is : %d.\n", sum_left, sum_right);
+
+    return 0;
+}
 ```
+### Output
+```
+Enter the number of rows : 3
+Enter the matrix elements : 1
+2
+3
+4
+5
+6
+7
+8
+9
 
+The Matrix is : 
+1 2 3 
+4 5 6 
+7 8 9 
+The sum of the left diagonal elements is : 15.
+The sum of the right diagonal elements is : 15.
+```
 
 ## 41. Print the Series: 3,34,343,3434,34343,……. up to n Number of Terms
 Develop a C program to print the series: 3, 34, 343, 3434, 34343, up to a specified number of terms.
