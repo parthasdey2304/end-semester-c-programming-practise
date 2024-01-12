@@ -20,7 +20,7 @@ int main() {
 
         if(st[i] == ' ') {
             newst[a] == ' ';
-            a++:
+            a++;
         }
     }
 
