@@ -1,16 +1,18 @@
 #include <stdio.h>
 
-int factorial(int n) {
-    return (n == 0)? 1 : factorial(n - 1) * n;
+int power(int base, int exponent) {
+    return (exponent == 0)? 1 : power(base, exponent - 1) * base;
 }
 
 int main() {
-    int n;
+    int base, exponent;
 
-    printf("Enter a number : ");
-    scanf("%d", &n);
+    printf("Enter the base : ");
+    scanf("%d", &base);
+    printf("Enter the exponent : ");
+    scanf("%d", &exponent);
 
-    printf("The factorial of the number %d is : %d.\n", n, factorial(n));
+    printf("The number %d raised to the power %d is : %d.\n", base, exponent, power(base, exponent));
 
     return 0;
 }
