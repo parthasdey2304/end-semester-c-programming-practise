@@ -1534,15 +1534,96 @@ The sum of the right diagonal elements is : 15.
 
 ## 41. Print the Series: 3,34,343,3434,34343,……. up to n Number of Terms
 Develop a C program to print the series: 3, 34, 343, 3434, 34343, up to a specified number of terms.
+### Code
 ``` c
+#include <stdio.h>
 
+int main() {
+    int n, i, series = 0;
+
+    printf("Enter a number : ");
+    scanf("%d", &n);
+
+    printf("The series is : ");
+    for(i = 1; i <= n; i++) {
+        if(i % 2 != 0) {
+            series = series * 10 + 3;
+        }
+        else {
+            series = series * 10 + 4;
+        }
+
+        printf("%d, ", series);
+    }
+
+    return 0;
+}
 ```
-
+### Output
+```
+Enter a number : 5
+The series is : 3, 34, 343, 3434, 34343,
+```
 
 ## 42. Write a Program to Find the Largest Number from a Set of n Numbers Using Dynamic Memory
 Allocate Memory Allocation.
+### Code
 ``` c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int n, *numbers, i;
+    int largest;
+
+    // Input the number of elements
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
+
+    // Dynamically allocate memory for the array
+    numbers = (int*)malloc(n * sizeof(int));
+
+    // Check if memory allocation is successful
+    if (numbers == NULL) {
+        printf("Memory allocation failed. Exiting...\n");
+        return 1; // Exit with an error code
+    }
+
+    // Input the elements of the array
+    printf("Enter the elements:\n");
+    for (i = 0; i < n; i++) {
+        printf("Element %d: ", i + 1);
+        scanf("%d", &numbers[i]);
+    }
+
+    // Assume the first element is the largest
+    largest = numbers[0];
+
+    // Find the largest number in the array
+    for (i = 1; i < n; i++) {
+        if (numbers[i] > largest) {
+            largest = numbers[i];
+        }
+    }
+
+    // Display the largest number
+    printf("The largest number is: %d\n", largest);
+
+    // Free dynamically allocated memory
+    free(numbers);
+
+    return 0;
+}
 
 ```
-
-
+### Output
+```
+Enter the number of elements: 5
+Enter the elements:
+Element 1: 1
+Element 2: 2
+Element 3: 3
+Element 4: 4
+Element 5: 5
+The largest number is: 5
+```
