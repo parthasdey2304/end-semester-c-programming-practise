@@ -9,7 +9,7 @@ int main() {
     printf("Enter the ending number : ");
     scanf("%d", &ending);
 
-    printf("\nThe prime numbers between %d and %d are : ", starting, ending);
+    printf("\nThe armstrong numbers between %d and %d are : ", starting, ending);
 
     for(i = starting; i <= ending; i++) {
         copy = i;
@@ -26,7 +26,7 @@ int main() {
 
         if(i == sum) {
             printf("%d, ", i);
-        }
+        } -c
 
         len = 0; sum = 0;
     }
