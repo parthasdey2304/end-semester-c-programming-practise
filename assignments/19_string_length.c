@@ -11,7 +11,9 @@ int main() {
         len++;
     }
 
-    printf("The length of the string is : %d.", len - 1);
+    len -= 1; // -1 because of the '\n' character at the end of the string needs to be ommited from the string
+
+    printf("The length of the string is : %d.", len);
 
     return 0;
 }
