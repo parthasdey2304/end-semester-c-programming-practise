@@ -1354,6 +1354,7 @@ Resultant Matrix:
 
 ## 34. Access Elements of an Array Using Pointer
 Write a C program to access elements of an array using pointers. Display the elements using pointer arithmetic.
+### Code
 ``` c
 #include <stdio.h>
 
@@ -1383,7 +1384,24 @@ int main() {
 }
 
 ```
+### Output
+```
+Enter the size of the array: 5
 
+Enter elements of the array:
+Enter element 1: 1
+Enter element 2: 2
+Enter element 3: 3
+Enter element 4: 4
+Enter element 5: 5
+
+Elements of the array accessed using pointers:
+Element 1: 1
+Element 2: 2
+Element 3: 3
+Element 4: 4
+Element 5: 5
+```
 
 ## 35. Multiply two Matrix Using Multi-dimensional Arrays
 Create a C program to multiply two matrices using multi-dimensional arrays. Display the original matrices and the result.
