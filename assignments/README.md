@@ -304,6 +304,7 @@ The number 121 is a palindrome.
 
 ## 10. Check Whether a Number is Prime or Not
 Develop a C program to determine whether a given number is prime or not. A prime number is a natural number greater than 1 that is not a product of two smaller natural numbers.
+### Code
 ``` c
 #include <stdio.h>
 
@@ -324,10 +325,16 @@ int main() {
 }
 }
 ```
+### Output
+```
+Enter a number : 17
 
+The number 17 is a prime number.
+```
 
 ## 11. Display Prime Numbers Between Two Intervals
 Write a C program to display all prime numbers within a specified range. Take the starting and ending values from the user.
+### Code
 ``` c
 #include <stdio.h>
 
@@ -356,9 +363,17 @@ int main() {
 }
 ```
 
+### Output
+```
+Enter the starting number : 1
+Enter the ending number : 20
+
+The prime numbers between 1 and 20 are : 2, 3, 5, 7, 11, 13, 17, 19,
+```
 
 ## 12. Check Armstrong Number
 Create a C program to check if a given number is an Armstrong number. An Armstrong number is a number that is the sum of its own digits each raised to the power of the number of digits.
+### Code
 ``` c
 #include <stdio.h>
 #include <math.h>
@@ -385,10 +400,16 @@ int main() {
     return 0;
 }
 ```
+### Output
+```
+Enter a number : 153
 
+The number 153 is an Armstrong number.
+```
 
 ## 13. Display Armstrong Number Between Two Intervals
 Develop a C program to display all Armstrong numbers within a given range. Allow the user to input the starting and ending values.
+### Code
 ``` c
 #include <stdio.h>
 #include <math.h>
@@ -426,10 +447,17 @@ int main() {
     return 0;
 }
 ```
+### Output
+```
+Enter the starting number : 1
+Enter the ending number : 500
 
+The armstrong numbers between 1 and 500 are : 1, 2, 3, 4, 5, 6, 7, 8, 9, 153, 370, 371, 407,
+```
 
 ## 14. Display Factors of a Number
 Write a C program to display all the factors of a given positive integer. Factors are the numbers that divide another number without leaving a remainder.
+### Code
 ``` c
 #include <stdio.h>
 
@@ -449,10 +477,16 @@ int main() {
     return 0;
 }
 ```
+### Output
+```
+Enter a number : 64
+The factors of the number 64 are : 1, 2, 4, 8, 16, 32, 64,
+```
 
 
 ## 15. Create Pyramid Structure
 Implement a C program to create a pyramid structure using nested loops. Allow the user to input the number of rows.
+### Code
 ``` c
 #include <stdio.h>
 
@@ -472,22 +506,21 @@ int main() {
     return 0;
 }
 ```
+### Output
+```
+     *
+    * *
+   * * *
+  * * * *
+ * * * * *
+```
 
 
 ## 16. Find the Frequency of Characters in a String
 Develop a C program to find and display the frequency of each character in a given string. Ignore case sensitivity.
+### Code
 ``` c
 #include <stdio.h>
-
-// int charFrequency(char *string, char character) {
-//     int i, c = 0;
-
-//     for(i = 0; string[i] != '\0'; i++) {
-//         c += (string[i] == character && character != '\n')? 1 : 0;
-//     }
-
-//     return c;
-// }
 
 int main() {
     char st[100], ch;
@@ -495,6 +528,8 @@ int main() {
     
     printf("Enter a string : ");
     fgets(st, sizeof(st), stdin);
+
+    printf("\nThe frequency of characters is : \n");
 
     for(ch = 'a'; ch <= 'z'; ch++) {
         c = 0;
@@ -512,10 +547,21 @@ int main() {
     return 0;
 }
 ```
+### Output
+```
+Enter a string : partha
 
+The frequency of characters is :
+        a : 2
+        h : 1
+        p : 1
+        r : 1
+        t : 1
+```
 
 ## 17. Count the Number of Vowels & Consonants
 Write a C program to count the number of vowels and consonants in a given string. Consider both uppercase and lowercase letters.
+### Code
 ``` c
 #include <stdio.h>
 
@@ -536,14 +582,21 @@ int main() {
 
     len -= 1;
 
-    printf("The number of vowels present in the string is : %d.\nThe number of consonants present in the string is : %d.", vowels, len - vowels);
+    printf("\nThe number of vowels present in the string is : %d.\nThe number of consonants present in the string is : %d.", vowels, len - vowels);
     return 0;
 }
 ```
+### Output
+```
+Enter a string : a quick brown jumped over the lazy dog
 
+The number of vowels present in the string is : 11.
+The number of consonants present in the string is : 27.
+```
 
 ## 18. Remove all Characters in a String Except Alphabet
 Create a C program to remove all characters from a string except alphabets. The modified string should be displayed as output.
+### Code
 ``` c
 #include <stdio.h>
 
@@ -564,6 +617,11 @@ int main() {
             newst[a] = st[i];
             a++;
         }
+        
+        if(st[i] == ' ') {
+            newst[a] == ' ';
+            a++;
+        }
     }
 
     printf("The new string after removing all the non alphabets is : %s", newst);
@@ -571,10 +629,16 @@ int main() {
     return 0;
 }
 ```
+### Output
+```
+Enter a string : hello123
+The new string after removing all the non alphabets is : hello
+```
 
 
 ## 19. Find the Length of a String
 Develop a C program to find and display the length of a given string without using standard library functions.
+### Code
 ``` c
 #include <stdio.h>
 
@@ -595,12 +659,17 @@ int main() {
 
     return 0;
 }
-
+```
+### Output
+```
+Enter a string : pneumonoultramicroscopicsilicovolcanoconiosis
+The length of the string is : 45.
 ```
 
 
 ## 20. Concatenate Two Strings
 Write a C program to concatenate two strings without using the strcat() function. Display the resulting string.
+### Code
 ``` c
 #include <stdio.h> 
 
@@ -631,10 +700,16 @@ int main(){
 }
 
 ```
-
+### Output
+```
+Enter the first string : Computer
+Enter the second string : Application
+The new string after concatination is : Computer Application
+```
 
 ## 21. Copy String Without Using strcpy()
 Implement a C program to copy one string into another without using the strcpy() function.
+### Code
 ``` c
 #include <stdio.h>
 
@@ -655,10 +730,16 @@ int main() {
     return 0;
 }
 ```
+### Output
+```
+Enter a string : science
+The new string after copying is : science.
+```
 
 
 ## 22. Display Prime Numbers Between Intervals Using Function
 Create a C program to display prime numbers within a specified range using a user-defined function for checking prime numbers.
+### Code
 ``` c
 #include <stdio.h>
 #include <stdbool.h>
@@ -691,7 +772,12 @@ int main() {
     return 0;
 }
 ```
-
+### Output
+```
+Enter the starting number : 1
+Enter the ending number : 50
+The prime numbers between 1 and 50 are : 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47,
+```
 
 ## 23. Check Prime Using User-defined Function
 Develop a C program that uses a user-defined function to check whether a given number is prime or not.
