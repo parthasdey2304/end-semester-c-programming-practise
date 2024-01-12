@@ -1405,10 +1405,116 @@ Element 5: 5
 
 ## 35. Multiply two Matrix Using Multi-dimensional Arrays
 Create a C program to multiply two matrices using multi-dimensional arrays. Display the original matrices and the result.
+### Code
 ``` c
+#include <stdio.h>
 
+int main() {
+    int firstMatrix[10][10], secondMatrix[10][10], result[10][10];
+    int rowFirst, columnFirst, rowSecond, columnSecond;
+
+    // Input for the first matrix
+    printf("Enter rows and columns for the first matrix: ");
+    scanf("%d %d", &rowFirst, &columnFirst);
+
+    printf("Enter elements for the first matrix:\n");
+    for (int i = 0; i < rowFirst; ++i) {
+        for (int j = 0; j < columnFirst; ++j) {
+            printf("Enter element a%d%d : ", i + 1, j + 1);
+            scanf("%d", &firstMatrix[i][j]);
+        }
+    }
+
+    // Input for the second matrix
+    printf("Enter rows and columns for the second matrix: ");
+    scanf("%d %d", &rowSecond, &columnSecond);
+
+    // Check if multiplication is possible
+    if (columnFirst != rowSecond) {
+        printf("Error! Multiplication not possible. Number of columns in the first matrix should be equal to the number of rows in the second matrix.\n");
+    } else {
+        printf("Enter elements for the second matrix:\n");
+        for (int i = 0; i < rowSecond; ++i) {
+            for (int j = 0; j < columnSecond; ++j) {
+                printf("Enter element b%d%d : ", i + 1, j + 1);
+                scanf("%d", &secondMatrix[i][j]);
+            }
+        }
+
+        // Initialize elements of result matrix to 0
+        for (int i = 0; i < rowFirst; ++i) {
+            for (int j = 0; j < columnSecond; ++j) {
+                result[i][j] = 0;
+            }
+        }
+
+        // Multiply the two matrices
+        for (int i = 0; i < rowFirst; ++i) {
+            for (int j = 0; j < columnSecond; ++j) {
+                for (int k = 0; k < columnFirst; ++k) {
+                    result[i][j] += firstMatrix[i][k] * secondMatrix[k][j];
+                }
+            }
+        }
+
+        // Display the original matrices
+        printf("\nFirst Matrix:\n");
+        for (int i = 0; i < rowFirst; ++i) {
+            for (int j = 0; j < columnFirst; ++j) {
+                printf("%d\t", firstMatrix[i][j]);
+            }
+            printf("\n");
+        }
+
+        printf("\nSecond Matrix:\n");
+        for (int i = 0; i < rowSecond; ++i) {
+            for (int j = 0; j < columnSecond; ++j) {
+                printf("%d\t", secondMatrix[i][j]);
+            }
+            printf("\n");
+        }
+
+        // Display the result matrix
+        printf("\nResultant Matrix:\n");
+        for (int i = 0; i < rowFirst; ++i) {
+            for (int j = 0; j < columnSecond; ++j) {
+                printf("%d\t", result[i][j]);
+            }
+            printf("\n");
+        }
+    }
+
+    return 0;
+}
 ```
+### Output
+```
+Enter rows and columns for the first matrix: 2
+2
+Enter elements for the first matrix:
+Enter element a11 : 1
+Enter element a12 : 2
+Enter element a21 : 3
+Enter element a22 : 4
+Enter rows and columns for the second matrix: 2
+2
+Enter elements for the second matrix:
+Enter element b11 : 1
+Enter element b12 : 2
+Enter element b21 : 3
+Enter element b22 : 4
 
+First Matrix:
+1       2
+3       4
+
+Second Matrix:
+1       2
+3       4
+
+Resultant Matrix:
+7       10
+```
 
 ## 36. Write a Recursive Function to Find the Sum of n Natural Numbers
 Develop a C program that uses a recursive function to find the sum of the first N natural numbers.
