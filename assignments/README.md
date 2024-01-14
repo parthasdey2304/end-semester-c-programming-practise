@@ -491,10 +491,13 @@ Implement a C program to create a pyramid structure using nested loops. Allow th
 #include <stdio.h>
 
 int main() {
-    int i, j, k;
+    int i, j, k, rows;
 
-    for(i = 1; i <= 5; i++) {
-        for(k = 5; k >= i; k--) {
+    printf("Enter the number of rows : ");
+    scand("%d", &rows);
+
+    for(i = 1; i <= rows; i++) {
+        for(k = rows; k >= i; k--) {
             printf(" ");
         }
 
@@ -508,6 +511,7 @@ int main() {
 ```
 ### Output
 ```
+Enter the number of rows : 5
      *
     * *
    * * *
