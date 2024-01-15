@@ -27,15 +27,68 @@ Welcome to the learning repository for C programming basics. Whether you are a b
 
 ## Basics of C Programming
 
-// Your explanation and code snippets here
+### Hello world program
+``` c
+#include <stdio.h>
+
+int main() {
+    printf("Hello world!");
+    return 0;
+}
+```
+
++ `#include <stdio.h>` : This line is a preprocessor directive. It tells the compiler to include the standard input-output library `stdio.h`. This library provides functions like `printf` and `scanf` for input and output operations.
++ `int main() { ... }` : This is the main function. In C, the program execution begins from the `main` function. It returns an integer value `int`, typically used to indicate the success or failure of the program to the operating system.
++ `printf("Hello world!");` :This line is a function call to `printf`. It's a standard output function used to print formatted output to the console. In this case, it prints the string "Hello world!".
+  + The format specifier `%s` is not used here because there are no additional arguments to be formatted. The string "Hello world!" is directly provided as an argument to `printf`.
++ `return 0;` : This statement indicates that the `main` function has finished executing, and it returns the value `0` to the operating system. A return value of `0` conventionally indicates successful execution to the calling environment.
+
++ In summary, this simple program includes the standard input-output library, defines the main function, uses `printf` to print the string "Hello world!" to the console, and returns 0 to indicate successful execution. When you run this program, it will print "Hello world!" to the console.
 
 ## Variables
+### Definition:
+In C programming, a variable is a named storage location in the computer's memory that can hold a value. Each variable has a specific data type, which determines the type of values it can store (e.g., integers, floating-point numbers, characters). Variables allow programmers to manipulate and store data during program execution.
 
-// Your explanation and code snippets here
+``` c
+#include <stdio.h>
+
+int main() {
+    // Declaration of variables
+    int apples = 5;           // An integer variable to store the number of apples
+    float temperature = 25.5; // A floating-point variable to store the temperature
+    char grade = 'A';         // A character variable to store a grade
+
+    // Using variables in a real-life context
+    printf("I have %d apples.\n", apples);
+    printf("The temperature is %.1f degrees Celsius.\n", temperature);
+    printf("My grade is %c.\n", grade);
+
+    return 0;
+}
+
+```
 
 ## Data Types
+In C programming, data types define the types of data that a variable can hold. Data types specify the size and type of values that can be stored in variables, helping the compiler understand how to interpret and handle the data. C provides several fundamental data types, and they can be broadly categorized into the following:
 
-// Your explanation and code snippets here
+### Basic Data Types
++ `int` : Integer data type is used to store whole numbers (positive or negative) without any decimal point.
+``` c
+int a = 5;
+```
++ `float` : Float data type is used to store floating-point numbers (numbers with decimal points).
+``` c
+float price = 12.99;
+
+```
++ `double` : Double data type is similar to float but has a higher precision, capable of holding larger and more accurate floating-point numbers.
+``` c
+double pi = 3.14159;
+```
++ `char` : Char data type is used to store a single character or a small integer.
+``` c
+char grade = 'A';
+```
 
 ## Taking Input
 
