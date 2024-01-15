@@ -90,6 +90,31 @@ double pi = 3.14159;
 char grade = 'A';
 ```
 
+### Derivatived Data Types
++ `Array` : An array is a collection of elements of the same data type stored in contiguous memory locations.
+``` c
+int numbers[5] = {1, 2, 3, 4, 5};
+```
++ `Pointer` : A pointer is a variable that stores the memory address of another variable. It is used for dynamic memory allocation and manipulation.
+``` c
+int *ptr;
+```
+
+### Enumerate Data Types
++ `enum` : Enumerations provide a way to define named integer constants, making the code more readable.
+```c
+enum Days {Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday};
+```
+
+### Void Data Type
++ `void` : Void is used to indicate that a function does not return any value.
+``` c
+void displayMessage() {
+    printf("Hello, World!\n");
+}
+```
+These data types allow C programmers to work with different kinds of data efficiently, ensuring appropriate memory allocation and manipulation. Choosing the right data type for a variable is crucial for optimizing memory usage and maintaining the accuracy of the data being stored.
+
 ## Taking Input
 
 // Your explanation and code snippets here
