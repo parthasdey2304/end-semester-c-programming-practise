@@ -199,6 +199,54 @@ int main() {
 }
 ```
 
+### Logical Operators
+This is used for logical operators, and for combining multiple conditions.
+``` c
+#include <stdio.h>
+
+int main() {
+    int x = 5, y = 10;
+
+    printf("(x > 0) && (y > 0) is %d\n", (x > 0) && (y > 0));
+    printf("(x > 0) || (y > 0) is %d\n", (x > 0) || (y > 0));
+    printf("!(x > 0) is %d\n", !(x > 0));
+
+    return 0;
+}
+```
+
+### Assignment Operator
+This is used to assign value to the variable.
+``` c
+#include <stdio.h>
+
+int main() {
+    int a = 5;
+    a += 3; // Equivalent to a = a + 3, = is assignment operator
+    printf("a is now %d\n", a);
+
+    return 0;
+}
+```
+
+### Bitwise Operator
+This is used to perform calculations at Bit-Wise Level.
+``` c
+#include <stdio.h>
+
+int main() {
+    int a = 5, b = 3;
+
+    printf("a & b is %d\n", a & b); // Bitwise AND
+    printf("a | b is %d\n", a | b); // Bitwise OR
+    printf("a ^ b is %d\n", a ^ b); // Bitwise XOR
+    printf("~a is %d\n", ~a);       // Bitwise NOT
+
+    return 0;
+}
+```
+
+
 ## If Conditions
 
 // Your explanation and code snippets here
