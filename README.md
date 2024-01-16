@@ -325,8 +325,61 @@ int main() {
 These examples illustrate the different ways `if` conditions can be used in C programming. The choice between them depends on the complexity of your program logic and the specific conditions you need to check.
 
 ## Break & Continue
+Certainly! The `break` and `continue` statements are used to control the flow of loops in C programming.
 
-// Your explanation and code snippets here
+### `break` Statement
+This is used to exit a loop before its iterations ends based on a condition.
+``` c
+#include <stdio.h>
+
+int main() {
+    int i;
+
+    for (i = 1; i <= 10; i++) {
+        if (i == 5) {
+            printf("Breaking the loop at i = 5\n");
+            break;
+        }
+        printf("%d ", i);
+    }
+
+    return 0;
+}
+```
+
+#### Output
+```
+1 2 3 4 Breaking the loop at i = 5
+```
+
+### `continue` Statement
+This is used to skip the rest of the loop body for the current iteration and move to the next iteration.
+``` c
+#include <stdio.h>
+
+int main() {
+    int i;
+
+    for (i = 1; i <= 5; i++) {
+        if (i == 3) {
+            printf("Skipping iteration at i = 3\n");
+            continue;
+        }
+        printf("%d ", i);
+    }
+
+    return 0;
+}
+```
+
+#### Output
+```
+1 2 Skipping iteration at i = 3
+4 5
+```
+In the first example, the `break` statement is used to exit the `for` loop when `i` becomes equal to 5. In the second example, the `continue` statement is used to skip the iteration when i is equal to 3.
+
+These statements are particularly useful for handling special cases or conditions within loops, allowing you to control the execution flow based on specific criteria.
 
 ## Switch Case
 
