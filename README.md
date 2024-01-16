@@ -248,8 +248,81 @@ int main() {
 
 
 ## If Conditions
+### Sinple `if`
+This is used to execute a block of code if a condition is true.
+``` c
+#include <stdio.h>
 
-// Your explanation and code snippets here
+int main() {
+    int x = 10;
+
+    if (x > 5) {
+        printf("x is greater than 5\n");
+    }
+
+    return 0;
+}
+```
+
+### `if-else` Statement
+This is used to execute one block of code if a condition is true and another block if it's false.
+``` c
+#include <stdio.h>
+
+int main() {
+    int x = 3;
+
+    if (x % 2 == 0) {
+        printf("x is even\n");
+    } else {
+        printf("x is odd\n");
+    }
+
+    return 0;
+}
+```
+
+### `if-else if-else` Statement
+This is used to check multiple conditions in sequence.
+``` c
+#include <stdio.h>
+
+int main() {
+    int score = 75;
+
+    if (score >= 90) {
+        printf("Grade: A\n");
+    } else if (score >= 80) {
+        printf("Grade: B\n");
+    } else if (score >= 70) {
+        printf("Grade: C\n");
+    } else {
+        printf("Grade: F\n");
+    }
+
+    return 0;
+}
+```
+### Nested `if` Statement
+This is used to have an `if` statement inside another `if` statement.
+``` c
+#include <stdio.h>
+
+int main() {
+    int x = 10, y = 5;
+
+    if (x > 5) {
+        printf("x is greater than 5\n");
+
+        if (y > 2) {
+            printf("y is greater than 2\n");
+        }
+    }
+
+    return 0;
+}
+```
+These examples illustrate the different ways `if` conditions can be used in C programming. The choice between them depends on the complexity of your program logic and the specific conditions you need to check.
 
 ## Break & Continue
 
