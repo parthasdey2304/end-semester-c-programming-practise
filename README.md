@@ -157,8 +157,47 @@ int main() {
 Remember to use the correct format specifier (%d for integers, %f for floats, etc.) in the scanf function based on the type of input you are expecting. Additionally, it's essential to handle user input carefully to avoid unexpected behavior, especially if the user provides input different from what your program expects.
 
 ## Operators
+In C programming, operators are symbols that perform operations on variables and values. They are used to manipulate data and perform various computations. Here are the different types of operators in C along with example snippets:
 
+### Arithmatic Operators
+These are used for basic mathematical calculations.
+``` c
+#include <stdio.h>
 
+int main() {
+    int a = 10, b = 5;
+    int sum = a + b;       // Addition
+    int difference = a - b; // Subtraction
+    int product = a * b;    // Multiplication
+    int quotient = a / b;   // Division
+    int remainder = a % b;  // Modulus (remainder after division)
+
+    printf("Sum: %d\n", sum);
+    printf("Difference: %d\n", difference);
+    printf("Product: %d\n", product);
+    printf("Quotient: %d\n", quotient);
+    printf("Remainder: %d\n", remainder);
+
+    return 0;
+}
+```
+
+### Relational Operators
+This is used for basic boolean calculations for comparison check values in either true of false.
+``` c
+#include <stdio.h>
+
+int main() {
+    int a = 5, b = 10;
+
+    printf("%d > %d is %d\n", a, b, a > b);
+    printf("%d < %d is %d\n", a, b, a < b);
+    printf("%d == %d is %d\n", a, b, a == b);
+    printf("%d != %d is %d\n", a, b, a != b);
+
+    return 0;
+}
+```
 
 ## If Conditions
 
