@@ -211,7 +211,7 @@ Enter a number : 10
 The sum of 10 numbers is : 55
 ```
 
-## Factorial using recursion
+## 7. Factorial using recursion
 Write a program in C to find the factorial of a number using recursion.
 ### Code
 ``` c
@@ -240,4 +240,50 @@ int main() {
 ```
 Enter a number : 5
 The factorial of the number 5 is 120.
+```
+
+## 8. Prime between Intervals
+Write a program in C to find the prime number between intervals.
+### Code
+``` c
+#include <stdio.h>
+
+int primeCheck(int n) {
+    int i, c = 0;
+
+    for(i = 1; i <= n; i++) {
+        if(n % i == 0) {
+            c++;
+        }
+    }
+
+    return c == 2;
+}
+
+int main() {
+    int starting, ending, i;
+
+    printf("Enter starting number : ");
+    scanf("%d", &starting);
+    printf("Enter ending number : ");
+    scanf("%d", &ending);
+
+    printf("All the prime numbers between %d and %d are : \n", starting, ending);
+
+    for(i = starting; i <= ending; i++) {
+        if(primeCheck(i)) {
+            printf("%d, ", i);
+        }
+    }
+
+    return 0;
+}
+```
+
+### Output
+```
+Enter starting number : 1
+Enter ending number : 50 
+All the prime numbers between 1 and 50 are : 
+2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47,
 ```
