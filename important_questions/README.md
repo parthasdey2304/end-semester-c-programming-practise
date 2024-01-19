@@ -527,3 +527,35 @@ The Original matrix is :
 The sum of the elements of the left diagonal matrix is : 8.
 ```
 
+## 13. Series 3, 34, 343, 3434 ...
+Write a program in C to print the series 3, 34, 343, 3434, 34343, ... to n terms.
+### Code
+``` c
+#include <stdio.h>
+
+int main() {
+    int n, i, a = 0;
+
+    printf("Enter a number : ");
+    scanf("%d", &n);
+
+    for(i = 1; i <= n; i++) {
+        if(i % 2 != 0) {
+            a = a * 10 + 3;
+        }
+        else {
+            a = a * 10 + 4;
+        }
+
+        printf("%d, ", a);
+    }
+
+    return 0;
+}
+```
+
+### Output
+```
+Enter a number : 10
+3, 34, 343, 3434, 34343, 343434, 3434343, 34343434, 343434343, 3434343434
+```
