@@ -145,3 +145,99 @@ int main() {
 Enter a number : 1234
 The reverse of 1234 is 4321.
 ```
+
+## 5. Fibonacci Series
+Write a program in C to display the fibonacci series upto n terms.
+### Code
+``` c
+#include <stdio.h>
+
+int main() {
+    int a = 0, b = 1, c = 0, n, i;
+
+    printf("Enter the number of terms : ");
+    scanf("%d", &n);
+
+    printf("\nThe terms of the fibonacci series upto %d are : 0, 1, ", n);
+
+    for(i = 1; i <= n - 2; i++) {
+        c = a + b;
+        printf("%d, ", c);
+        a = b;
+        b = c;
+    }
+
+    return 0;
+}
+```
+
+### Output
+```
+Enter the number of terms : 10
+
+The terms of the fibonacci series upto 10 are : 0, 1, 1, 2, 3, 5, 8, 13, 21, 34,
+```
+
+## 6. Sum of Numbers using Recursion
+Write a program to find the sum of a natural numbers using recursion..
+### Code
+``` c
+#include <stdio.h>
+
+int sum(int n) {
+    if(n == 0) {
+        return 0;
+    }
+    else {
+        return n + sum(n - 1);
+    }
+}
+
+int main() {
+    int n;
+
+    printf("Enter a number : ");
+    scanf("%d", &n);
+
+    printf("The sum of %d numbers is : %d", n, sum(n));
+
+    return 0;
+}
+```
+
+### Output
+```
+Enter a number : 10
+The sum of 10 numbers is : 55
+```
+
+## Factorial using recursion
+Write a program in C to find the factorial of a number using recursion.
+### Code
+``` c
+#include <stdio.h>
+
+int factorial(int n) {
+    if(n == 0) {
+        return 1;
+    }
+    else {
+        return n * factorial(n - 1);
+    }
+}
+
+int main() {
+    int n;
+
+    printf("Enter a number : ");
+    scanf("%d", &n);
+
+    printf("The factorial of the number %d is %d.\n", n, factorial(n));
+}
+```
+
+### Output
+```
+Enter a number : 5
+The factorial of the number 5 is 120.
+```
