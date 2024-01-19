@@ -563,6 +563,9 @@ Enter a number : 10
 <hr>
 
 # Extra Questions
+
+# NumberLogic
+
 ## 1. Palindrome Number
 Write a program in C to check whether a number is palindrome or not.
 ### Code
@@ -595,3 +598,12 @@ int main() {
 Enter a number : 121
 The number 121 is a Palindrome.
 ```
+
+# Patterns
+<h2>1. 
+    1
+    1 2
+    1 2 3
+    1 2 3 4
+    1 2 3 4 5
+</h2>
