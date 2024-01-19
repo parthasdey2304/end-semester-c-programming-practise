@@ -287,3 +287,76 @@ Enter ending number : 50
 All the prime numbers between 1 and 50 are : 
 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47,
 ```
+
+## 9. Transpose of Matrix
+Write the program in C to transpose the matrix.
+### Code
+``` c
+#include <stdio.h>
+
+int main() {
+    int rows, columns, i, j;
+
+    printf("Enter the number of rows: ");
+    scanf("%d", &rows);
+    printf("Enter the number of columns: ");
+    scanf("%d", &columns);
+
+    int arr[rows][columns];
+
+    printf("Enter the elements of the matrix:\n");
+
+    for (i = 0; i < rows; i++) {
+        for (j = 0; j < columns; j++) {
+            scanf("%d", &arr[i][j]);
+        }
+    }
+
+    printf("\nThe Original matrix is:\n");
+    for (i = 0; i < rows; i++) {
+        for (j = 0; j < columns; j++) {
+            printf("%d ", arr[i][j]);
+        }
+
+        printf("\n");
+    }
+
+    printf("\nThe Transpose of the matrix is:\n");
+
+    for (j = 0; j < columns; j++) {
+        for (i = 0; i < rows; i++) {
+            printf("%d ", arr[i][j]);
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+}
+```
+
+### Output
+```
+Enter the number of rows: 3
+Enter the number of columns: 3
+Enter the elements of the matrix:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+The Original matrix is:
+1 2 3 
+4 5 6 
+7 8 9 
+
+The Transpose of the matrix is:
+1 4 7 
+2 5 8 
+3 6 9 
+```
