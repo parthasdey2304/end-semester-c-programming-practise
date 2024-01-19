@@ -360,3 +360,108 @@ The Transpose of the matrix is:
 2 5 8 
 3 6 9 
 ```
+
+## 10. Switch Case Calculator
+Write a program in C to perform the following operations using switch case.
+### Code
+``` c
+#include <stdio.h>
+
+int main() {
+    int choice, num1, num2;
+
+    printf("Enter the first number : ");
+    scanf("%d", &num1);
+    printf("Enter the second number : ");
+    scanf("%d", &num2);
+
+    printf("\nEnter 1 for addition of 2 numbers. \nEnter 2 for subtraction of 2 numbers. \nEnter 3 for multiplication of 2 numbers. \nEnter 4 for division of 2 numbers. \nEnter your choice : ");
+    scanf("%d", &choice);
+
+    switch(choice) {
+        case 1:
+            printf("Addition of %d and %d is %d.", num1, num2, num1+num2);
+        break;
+
+        case 2:
+            printf("Subtraction of %d and %d is %d.", num1, num2, num1-num2);
+        break;
+
+        case 3:
+            printf("Multiplication of %d and %d is %d.", num1, num2, num1*num2);
+        break;
+
+        case 4:
+            printf("Division of %d and %d is %d.", num1, num2, num1/num2);
+        break;
+
+        default:
+            printf("Invalid choice.");
+        break;
+    }
+    return 0;
+}
+```
+
+### Output
+```
+Enter the first number : 34
+Enter the second number : 23
+
+Enter 1 for addition of 2 numbers. 
+Enter 2 for subtraction of 2 numbers. 
+Enter 3 for multiplication of 2 numbers. 
+Enter 4 for division of 2 numbers. 
+Enter your choice : 2
+Subtraction of 34 and 23 is 11.
+```
+
+## 11. Reverse String
+Write a program in C to reverse a string using function.
+### Code
+``` c
+#include <stdio.h>
+#include <string.h>
+
+void reverseString(char str[]) {
+    int length = strlen(str);
+    int start = 0;
+    int end = length - 1;
+
+    while (start < end) {
+        // Swap characters at start and end positions
+        char temp = str[start];
+        str[start] = str[end];
+        str[end] = temp;
+
+        // Move towards the center
+        start++;
+        end--;
+    }
+}
+
+int main() {
+    char inputString[100];
+
+    printf("Enter a string: ");
+    fgets(inputString, sizeof(inputString), stdin);
+
+    // Remove the newline character from the input
+    inputString[strcspn(inputString, "\n")] = 0;
+
+    // Call the function to reverse the string
+    reverseString(inputString);
+
+    // Display the reversed string
+    printf("Reversed String: %s\n", inputString);
+
+    return 0;
+}
+
+```
+
+### Output
+```
+Enter a string: partha
+Reversed String: ahtrap
+```
