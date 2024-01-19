@@ -600,10 +600,10 @@ The number 121 is a Palindrome.
 ```
 
 # Patterns
-<h2>1. 
-    1
-    1 2
-    1 2 3
-    1 2 3 4
-    1 2 3 4 5
+<h2>1. Pattern 1 <br> 
+    1 <br>
+    1 2 <br>
+    1 2 3 <br>
+    1 2 3 4 <br>
+    1 2 3 4 5 <br>
 </h2>
