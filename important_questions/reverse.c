@@ -4,8 +4,8 @@ int main() {
     int n, reverse = 0, copy;
 
     printf("Enter a number : ");
-    scanf("%d", &n);  // 123
-    copy = n; // 123
+    scanf("%d", &n); 
+    copy = n; 
 
     while(n!= 0) { 
         reverse = reverse * 10 + n % 10; 
