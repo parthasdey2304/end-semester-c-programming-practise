@@ -561,3 +561,37 @@ Enter a number : 10
 ```
 
 <hr>
+
+# Extra Questions
+## 1. Palindrome Number
+Write a program in C to check whether a number is palindrome or not.
+### Code
+``` c
+#include <stdio.h>
+
+int reverse(int n) {
+    int rev = 0;
+
+    while(n != 0) {
+        rev = rev * 10 + n % 10;
+        n /= 10;
+    }
+
+    return rev;
+}
+
+int main() {
+    int n;
+
+    printf("Enter a number : ");
+    scanf("%d", &n);
+
+    printf((n == reverse(n))? "The number %d is a Palindrome.\n" : "The number %d is not a Palindrome.\n", n);
+}
+```
+
+### Output
+```
+Enter a number : 121
+The number 121 is a Palindrome.
+```
