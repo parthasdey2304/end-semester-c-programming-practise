@@ -121,6 +121,9 @@ Enter the sentence: This   is a    sentence    with improper       number   of  
 New sentence: This is a sentence with improper number of spaces 
 ```
 
+<hr>
+
+
 ## Question 3
 Write a program that accepts an amount in figures and prints that in words. For example, for an amount of Rs. 426, it should output the string Four hundred twenty six, whereas for Rs.316 it would be Three hundred sixteen.
 
@@ -174,6 +177,9 @@ Amount in words: Four Hundred Twenty Six
 Enter the amount in figures: Rs. 316
 Amount in words: Three Hundred Sixteen
 ```
+
+<hr>
+
 
 ## Question 4
 Write a program that uses Quick Sort algorithm to sort and array.
@@ -253,6 +259,9 @@ Unsorted Array:
 Sorted Array: 
 -2 0 1 6 7 8 9 
 ```
+
+<hr>
+
 
 ## Question 5
 Merge sort divides input array in two halves, calls itself for the two halves and then merges the 
@@ -359,6 +368,9 @@ Sorted Array:
 1 5 6 9 10 12
 ```
 
+<hr>
+
+
 ## Question 6
 Write a program to search an element in an array using binary search technique.
 
@@ -417,6 +429,9 @@ Enter the number that you want to search : 7
 
 Element was found at the index: 3
 ```
+
+<hr>
+
 
 ## Question 7
 Write a program/algorithm to evaluate postfix expression
@@ -481,6 +496,9 @@ int main() {
 Enter the Expression: 52+
 Result: 7
 ```
+
+<hr>
+
 
 ## Question 8
 Write a C program to find sum of the two diagonals of a square matrix (n x n).
@@ -556,3 +574,6 @@ Enter element at position (3, 3): 9
 Sum of Primary Diagonal: 15
 Sum of Secondary Diagonal: 15
 ```
+
+<hr>
+
