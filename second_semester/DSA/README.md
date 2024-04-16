@@ -577,3 +577,1216 @@ Sum of Secondary Diagonal: 15
 
 <hr>
 
+## Question 9
+Write a program to delete an element from an array of integers where position of the element is the input of the program.
+
+#### Code
+``` cpp
+#include <iostream>
+using namespace std;
+
+// Function to delete an element from an array
+void deleteElement(int arr[], int& size, int position) {
+    // Check if position is valid
+    if (position < 0 || position >= size) {
+        cout << "Invalid position!" << endl;
+        return;
+    }
+
+    // Shift elements to the left starting from position
+    for (int i = position; i < size - 1; i++) {
+        arr[i] = arr[i + 1];
+    }
+
+    // Decrease the size of the array
+    size--;
+}
+
+int main() {
+    int arr[100]; // Maximum array size
+    int size;
+
+    // Input the size of the array
+    cout << "Enter the size of the array: ";
+    cin >> size;
+
+    // Input the elements of the array
+    cout << "Enter the elements of the array:" << endl;
+    for (int i = 0; i < size; i++) {
+        cin >> arr[i];
+    }
+
+    int position;
+    // Input the position to delete element
+    cout << "Enter the position of the element to delete (0-indexed): ";
+    cin >> position;
+
+    // Delete element at the given position
+    deleteElement(arr, size, position);
+
+    // Display the updated array
+    cout << "Array after deleting element:" << endl;
+    for (int i = 0; i < size; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
+```
+
+#### Output
+```
+Enter the size of the array: 5
+Enter the elements of the array:
+10
+20
+30
+40
+50
+Enter the position of the element to delete (0-indexed): 2
+Array after deleting element:
+10 20 40 50
+```
+
+<hr>
+
+## Question 10
+Write a program/algorithm to sort an array of integers using insertion sort technique.
+
+#### Code
+``` cpp
+#include <iostream>
+#define MAXSIZE 100
+using namespace std;
+
+void insertionSort(int arr[], int size) {
+    int key;
+    int j = 0;
+    for (int i = 1; i < size; i++) {
+        key = arr[i];
+        j = i - 1;
+        while (j >= 0 && arr[j] > key) {
+            arr[j + 1] = arr[j];
+            j = j - 1;
+        }
+        arr[j + 1] = key;
+    }
+
+}
+
+int main() {
+    int n;
+    int myarray[MAXSIZE];
+
+    cout << "Number of elements: ";
+    cin >> n; 
+
+    cout << "Enter " << n << " integers in any order: ";
+    for (int i = 0; i < n; i++) {
+        cin >> myarray[i];
+    }
+
+    insertionSort(myarray, n);
+
+    cout << endl << "After Sorting: " << endl;
+    for (int i = 0; i < n; i++) {
+        cout << myarray[i] << " ";
+    }
+    cout << endl << endl;
+    return 0;
+}
+```
+
+#### Output
+```
+Number of elements: 6
+Enter 6 integers in any order: 5 2 9 3 7 1
+
+After Sorting: 
+1 2 3 5 7 9 
+```
+
+<hr>
+
+## Question 11
+Write a program/algorithm to represent a Stack using an array.
+
+#### Code
+``` cpp
+#include<iostream>
+
+#define MAXSIZE 100
+
+using namespace std;
+
+class Stack_Array{
+    int stack[MAXSIZE];
+    int top; 
+
+    public:
+    
+    Stack_Array(){
+        top = -1;
+    }
+
+    void push();
+    void pop();
+    void traverse();
+};
+
+void Stack_Array::push(){
+    int item; 
+    if(top==MAXSIZE-1){
+        cout << "\nThe Stack is full";
+        
+    } else {
+        cout << "\nEnter element to be inserted: ";
+        cin >> item;
+        stack[++top] = item;    
+    }
+}
+
+void Stack_Array::pop(){
+    int item; 
+    if(top==-1){
+        cout << "\nThe stack is empty";
+    
+    } else {
+        item = stack[top--];
+        cout << "\nThe Deleted item is: " << item;
+    }
+}
+
+void Stack_Array::traverse(){
+    int i; 
+    if(top==-1){
+        cout << "\nStack Empty";
+    } else {
+        cout << "\n\nThe elements in the stack are: ";
+        for(i=top; i>=0; i--){
+            cout << "\n" << stack[i];
+        }
+    }
+}
+
+int main() {
+    int choice; 
+    char ch; 
+    
+    // Declaring an object to the class
+    Stack_Array ps;
+
+    do{
+        // A menu for stack operation
+        cout << "\n1. Push";
+        cout << "\n2. Pop";
+        cout << "\n3. Traverse";
+        cout << "\nEnter your choice: ";
+        cin >> choice; 
+        switch (choice)
+        {
+        case 1:         // Calling push function by class object
+            ps.push();
+            break;
+        case 2: 
+            ps.pop();
+            break;
+        case 3:
+            ps.traverse();
+            break;
+        default:
+            cout << "\nInvalid Input! Enter correct choice.";
+            break;
+        }
+        cout << "\n\nPress(y/Y) to continue: ";
+        cin >> ch;
+    }while( ch=='y' || ch=='Y');
+
+    return 0;
+}
+```
+
+#### Output
+```
+1. Push
+2. Pop
+3. Traverse
+Enter your choice: 1
+
+Enter element to be inserted: 5
+
+Press(y/Y) to continue: y
+
+1. Push
+2. Pop
+3. Traverse
+Enter your choice: 1
+
+Enter element to be inserted: 8
+
+Press(y/Y) to continue: y
+
+1. Push
+2. Pop
+3. Traverse
+Enter your choice: 1
+
+Enter element to be inserted: 3
+
+Press(y/Y) to continue: y
+
+1. Push
+2. Pop
+3. Traverse
+Enter your choice: 3
+
+
+The elements in the stack are: 
+3
+8
+5
+
+Press(y/Y) to continue: y
+
+1. Push
+2. Pop
+3. Traverse
+Enter your choice: 2
+
+The Deleted item is: 3
+
+Press(y/Y) to continue: n
+```
+
+<hr>
+
+## Question 12
+Write down the following functions/algorithm for a linear linked list and double linked list.
+a) Insert a node at the beginning of the list
+b) Delete a node at the end of the list
+c) Append a node at the end of the list
+d) Insert a node at any middle position of the list
+e) Delete a node from any middle position of the list
+f) Count number of nodes present in the list and find the sum of all nodes
+
+### Single LinkedList
+#### Code
+``` cpp
+#include<iostream>
+
+using namespace std;
+
+class Node {
+public:
+    int info;
+    Node* link;
+};
+
+class LinkedList {
+    Node* start;
+public:
+    LinkedList() {
+        start = NULL;
+    }
+
+    void createList(int);
+    void addAtBeg(int);
+    void addAfter(int, int);
+    void deleteNode();
+    void display();
+    void count();
+};
+
+void LinkedList::createList(int data) {
+    Node* tmp = new Node();
+    tmp->info = data;
+    tmp->link = NULL;
+
+    if (start == NULL)
+        start = tmp;
+    else {
+        Node* q = start;
+        while (q->link != NULL)
+            q = q->link;
+        q->link = tmp;
+    }
+}
+
+void LinkedList::addAtBeg(int data) {
+    Node* tmp = new Node();
+    tmp->info = data;
+    tmp->link = start;
+    start = tmp;
+    display();
+}
+
+void LinkedList::addAfter(int data, int pos) {
+    int i;
+    Node* tmp;
+    Node* q = start;
+    for (i = 0; i < pos - 1; i++) {
+        q = q->link;
+        if (q == NULL) {
+            cout << "\nThere are less than " << pos << " elements";
+            return;
+        }
+    }
+
+    tmp = new Node();
+    tmp->link = q->link;
+    tmp->info = data;
+    q->link = tmp;
+    display();
+}
+
+void LinkedList::deleteNode() {
+    int data;
+    if (start == NULL) {
+        cout << "List is empty";
+        return;
+    }
+
+    cout << "Enter the element for deletion: ";
+    cin >> data;
+
+    if (start->info == data) {
+        Node* tmp = start;
+        start = start->link;
+        delete tmp;
+        display();
+        return;
+    }
+
+    Node* q = start;
+    while (q->link->link != NULL) {
+        if (q->link->info == data) {
+            Node* tmp = q->link;
+            q->link = tmp->link;
+            delete tmp;
+            display();
+            return;
+        }
+
+        q = q->link;
+    }
+
+    if (q->link->info == data) {
+        Node* tmp = q->link;
+        delete tmp;
+        q->link = NULL;
+        display();
+        return;
+    }
+
+    cout << "Element " << data << " not found";
+}
+
+void LinkedList::display() {
+    if (start == NULL) {
+        cout << "Linked List is empty.\n";
+        return;
+    }
+    Node* q = start;
+    cout << "List is: ";
+    while (q != NULL) {
+        cout << q->info << " ";
+        q = q->link;
+    }
+    cout << "\n";
+}
+
+void LinkedList::count() {
+    int counter = 0;
+    int sum = 0;
+    Node* current = start;
+
+    while (current != NULL) {
+        sum += current->info;
+        counter++;
+        current = current->link;
+    }
+    cout << "Number of nodes in the linked list: " << counter << endl;
+    cout << "Sum of all nodes: " << sum << endl;
+}
+
+int main() {
+    int choice, n, m, position, i;
+    LinkedList list;
+    cout << "\nMain Menu:\n";
+    cout << "==========\n";
+    cout << "1. Create list\n";
+    cout << "2. Add at Beginning\n";
+    cout << "3. Add After\n";
+    cout << "4. Delete\n";
+    cout << "5. Display\n";
+    cout << "6. Count\n";
+    cout << "7. Quit\n";
+    while (1) {
+        cout << "\nEnter Choice: ";
+        cin >> choice;
+        switch (choice) {
+        case 1:
+            cout << "How many nodes do you want: ";
+            cin >> n;
+            cout << "Enter the elements: ";
+            for (i = 0; i < n; i++) {
+                cin >> m;
+                list.createList(m);
+            }
+            break;
+        case 2:
+            cout << "Enter the element: ";
+            cin >> m;
+            list.addAtBeg(m);
+            break;
+        case 3:
+            cout << "Enter the element: ";
+            cin >> m;
+            cout << "Enter the position after which element is inserted: ";
+            cin >> position;
+            list.addAfter(m, position);
+            break;
+        case 4:
+            list.deleteNode();
+            break;
+        case 5:
+            list.display();
+            break;
+        case 6:
+            list.count();
+            break;
+        case 7:
+            cout << "Exiting Program!\n";
+            exit(1);
+        default:
+            cout << "Invalid Input!\n";
+            break;
+        }
+    }
+    return 0;
+}
+```
+
+#### Output
+```
+Main Menu:
+==========
+1. Create list
+2. Add at Beginning
+3. Add After
+4. Delete
+5. Display
+6. Count
+7. Quit
+
+Enter Choice: 1
+How many nodes do you want: 4
+Enter the elements: 5 8 3 1
+
+Enter Choice: 5
+List is: 5 8 3 1 
+
+Enter Choice: 2
+Enter the element: 9
+List is: 9 5 8 3 1 
+
+Enter Choice: 3
+Enter the element: 7
+Enter the position after which element is inserted: 2
+List is: 9 5 7 8 3 1 
+
+Enter Choice: 4
+Enter the element for deletion: 8
+List is: 9 5 7 3 1 
+
+Enter Choice: 6
+Number of nodes in the linked list: 5
+Sum of all nodes:  25
+
+Enter Choice: 7
+Exiting Program!
+```
+
+### Doubly LinkedList
+#### Code
+``` cpp
+#include<iostream>
+
+using namespace std;
+
+class Node {
+public:
+    int info;
+    Node* prev;
+    Node* next;
+    Node() {
+        prev = NULL;
+        next = NULL;
+    }
+};
+
+class LinkedList {
+    Node* start;
+public:
+    LinkedList() {
+        start = NULL;
+    }
+
+    void createList(int);
+    void addAtBeg(int);
+    void addAfter(int, int);
+    void deleteNode();
+    void display();
+    void count();
+};
+
+void LinkedList::createList(int data) {
+    Node* tmp = new Node();
+    tmp->info = data;
+    if (start == NULL)
+        start = tmp;
+    else {
+        Node* q = start;
+        while (q->next != NULL)
+            q = q->next;
+        q->next = tmp;
+        tmp->prev = q;
+    }
+}
+
+void LinkedList::addAtBeg(int data) {
+    Node* tmp = new Node();
+    tmp->info = data;
+    tmp->next = start;
+    if (start != NULL)
+        start->prev = tmp;
+    start = tmp;
+    display();
+}
+
+void LinkedList::addAfter(int data, int pos) {
+    Node* tmp = new Node();
+    tmp->info = data;
+    Node* q = start;
+    for (int i = 0; i < pos - 1 && q != NULL; i++)
+        q = q->next;
+    if (q == NULL) {
+        cout << "\nThere are less than " << pos << " elements." << endl;
+        return;
+    }
+    tmp->next = q->next;
+    tmp->prev = q;
+    if (q->next != NULL)
+        q->next->prev = tmp;
+    q->next = tmp;
+    display();
+}
+
+void LinkedList::deleteNode() {
+    if (start == NULL) {
+        cout << "List is empty";
+        return;
+    }
+    int data;
+    cout << "Enter the element for deletion: ";
+    cin >> data;
+    Node* tmp = start;
+    if (tmp->info == data) {
+        start = start->next;
+        if (start != NULL)
+            start->prev = NULL;
+        delete tmp;
+        return;
+    }
+    while (tmp != NULL && tmp->info != data)
+        tmp = tmp->next;
+    if (tmp == NULL) {
+        cout << "\n\nElement " << data << " not found";
+        return;
+    }
+    if (tmp->next != NULL)
+        tmp->next->prev = tmp->prev;
+    tmp->prev->next = tmp->next;
+    delete tmp;
+    display();
+}
+
+void LinkedList::display() {
+    if (start == NULL) {
+        cout << "Linked List is empty.";
+        return;
+    }
+    Node* q = start;
+    cout << "List is: ";
+    while (q != NULL) {
+        cout << q->info << " ";
+        q = q->next;
+    }
+    cout << endl;
+}
+
+void LinkedList::count() {
+    int counter = 0;
+    int sum = 0;
+    Node* current = start;
+    while (current != NULL) {
+        sum += current->info;
+        counter++;
+        current = current->next;
+    }
+    cout << "Number of nodes in the linked list: " << counter << endl;
+    cout << "Sum of all nodes in the linked list: " << sum << endl;
+}
+
+int main() {
+    int choice, n, m, position, i;
+    LinkedList list;
+    cout << "\nMain Menu:\n";
+    cout << "==========\n";
+    cout << "1. Create list\n";
+    cout << "2. Add at Beginning\n";
+    cout << "3. Add After\n";
+    cout << "4. Delete\n";
+    cout << "5. Display\n";
+    cout << "6. Count\n";
+    cout << "7. Quit\n";
+    while (1) {
+        cout << "\nEnter Choice: ";
+        cin >> choice;
+        switch (choice) {
+        case 1:
+            cout << "How many nodes do you want: ";
+            cin >> n;
+            cout << "Enter the elements: ";
+            for (i = 0; i < n; i++) {
+                cin >> m;
+                list.createList(m);
+            }
+            break;
+        case 2:
+            cout << "Enter the element: ";
+            cin >> m;
+            list.addAtBeg(m);
+            break;
+        case 3:
+            cout << "Enter the element: ";
+            cin >> m;
+            cout << "Enter the position after which element is inserted: ";
+            cin >> position;
+            list.addAfter(m, position);
+            break;
+        case 4:
+            list.deleteNode();
+            break;
+        case 5:
+            list.display();
+            break;
+        case 6:
+            list.count();
+            break;
+        case 7:
+            cout << "Exiting Program!\n";
+            exit(1);
+        default:
+            cout << "Invalid Input!\n";
+            break;
+        }
+    }
+    return 0;
+}
+
+```
+
+#### Output
+```
+Main Menu:
+==========
+1. Create list
+2. Add at Beginning
+3. Add After
+4. Delete
+5. Display
+6. Count
+7. Quit
+
+Enter Choice: 1
+How many nodes do you want: 4
+Enter the elements: 5 8 3 1
+
+Enter Choice: 5
+List is: 5 8 3 1 
+
+Enter Choice: 2
+Enter the element: 9
+List is: 9 5 8 3 1 
+
+Enter Choice: 3
+Enter the element: 7
+Enter the position after which element is inserted: 2
+List is: 9 5 7 8 3 1 
+
+Enter Choice: 4
+Enter the element for deletion: 8
+List is: 9 5 7 3 1 
+
+Enter Choice: 6
+Number of nodes in the linked list: 5
+Sum of all nodes in the linked list: 25
+
+Enter Choice: 7
+Exiting Program!
+```
+
+<hr>
+
+## Question 13
+Write a program to create a circular linked list.
+
+#### Code
+``` cpp
+#include <iostream>
+
+using namespace std;
+
+class Node {
+public:
+    int data;
+    Node* next;
+
+    Node(int data) {
+        this->data = data;
+        this->next = nullptr;
+    }
+};
+
+class CircularLinkedList {
+private:
+    Node* head;
+
+public:
+    CircularLinkedList() {
+        head = nullptr;
+    }
+
+    void append(int data) {
+        Node* new_node = new Node(data);
+        if (!head) {
+            head = new_node;
+            new_node->next = head;
+        } else {
+            Node* temp = head;
+            while (temp->next != head) {
+                temp = temp->next;
+            }
+            temp->next = new_node;
+            new_node->next = head;
+        }
+    }
+
+    void remove(int key) {
+        if (!head) {
+            cout << "List is empty" << endl;
+            return;
+        }
+
+        Node* current = head;
+        Node* prev = nullptr;
+
+
+        while (current->data != key) {
+            if (current->next == head) {
+                cout << "Key not found in the list" << endl;
+                return;
+            }
+            prev = current;
+            current = current->next;
+        }
+
+
+        if (current->next == head && prev == nullptr) {
+            head = nullptr;
+            delete current;
+            cout << "Node with data " << key << " removed successfully" << endl;
+            return;
+        }
+
+
+        if (current == head) {
+            prev = head;
+            while (prev->next != head) {
+                prev = prev->next;
+            }
+            head = head->next;
+            prev->next = head;
+            delete current;
+        } else if (current->next == head) {
+            prev->next = head;
+            delete current;
+        } else {
+            prev->next = current->next;
+            delete current;
+        }
+
+        cout << "Node with data " << key << " removed successfully" << endl;
+    }
+
+    void display() {
+        if (!head) {
+            cout << "Circular Linked List is empty" << endl;
+            return;
+        }
+
+        Node* temp = head;
+        do {
+            cout << temp->data << " ";
+            temp = temp->next;
+        } while (temp != head);
+        cout << endl;
+    }
+};
+
+int main() {
+    CircularLinkedList cll;
+    int choice, data;
+
+    while (true) {
+        cout << "\nCircular Linked List Operations:" << endl;
+        cout << "1. Append" << endl;
+        cout << "2. Remove" << endl;
+        cout << "3. Display" << endl;
+        cout << "4. Exit" << endl;
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+        switch (choice) {
+            case 1:
+                cout << "Enter data to append: ";
+                cin >> data;
+                cll.append(data);
+                break;
+            case 2:
+                cout << "Enter data to remove: ";
+                cin >> data;
+                cll.remove(data);
+                break;
+            case 3:
+                cout << "Circular Linked List:" << endl;
+                cll.display();
+                break;
+            case 4:
+                cout << "Exiting program..." << endl;
+                return 0;
+            default:
+                cout << "Invalid choice! Please try again." << endl;
+        }
+    }
+
+    return 0;
+}
+```
+
+#### Output
+```
+Circular Linked List Operations:
+1. Append
+2. Remove
+3. Display
+4. Exit
+Enter your choice: 1
+Enter data to append: 5
+
+Circular Linked List:
+5 
+
+Circular Linked List Operations:
+1. Append
+2. Remove
+3. Display
+4. Exit
+Enter your choice: 1
+Enter data to append: 8
+
+Circular Linked List:
+5 8 
+
+Circular Linked List Operations:
+1. Append
+2. Remove
+3. Display
+4. Exit
+Enter your choice: 1
+Enter data to append: 3
+
+Circular Linked List:
+5 8 3 
+
+Circular Linked List Operations:
+1. Append
+2. Remove
+3. Display
+4. Exit
+Enter your choice: 2
+Enter data to remove: 8
+Node with data 8 removed successfully
+
+Circular Linked List Operations:
+1. Append
+2. Remove
+3. Display
+4. Exit
+Enter your choice: 3
+Circular Linked List:
+5 3 
+
+Circular Linked List Operations:
+1. Append
+2. Remove
+3. Display
+4. Exit
+Enter your choice: 4
+Exiting program...
+```
+
+<hr>
+
+## Question 14
+Write a program to check whether a given number is triad or not.
+
+#### Code
+``` cpp
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+bool isTriad(int number) {
+    for (int a = 0; a * a * a <= number; a++) {
+        for (int b = a; b * b * b <= number; b++) {
+            for (int c = b; c * c * c <= number; c++) {
+                if (a * a * a + b * b * b + c * c * c == number) {
+                    cout << number << " is a triad number!";
+                    return true;
+                }
+            }
+        }
+    }
+    cout << number << " is not a triad number." << endl;
+    return false;
+}
+
+int main() {
+    int number;
+    cout << "Enter a number: ";
+    cin >> number;
+
+    isTriad(number);
+
+    return 0;
+}
+```
+
+#### Output
+```
+Enter a number: 100
+100 is not a triad number.
+
+Enter a number: 1729
+1729 is a triad number!
+```
+
+<hr>
+
+## Question 15
+Write a program to find the sum of the upper/lower triangle elements of a giver matrix.
+
+#### Code
+``` cpp
+#include <iostream>
+using namespace std;
+
+const int MAX_SIZE = 100;
+
+
+int sumUpperTriangle(int matrix[MAX_SIZE][MAX_SIZE], int size) {
+    int sum = 0;
+    for (int i = 0; i < size; i++) {
+        for (int j = i; j < size; j++) {
+            sum += matrix[i][j];
+        }
+    }
+    return sum;
+}
+
+
+int sumLowerTriangle(int matrix[MAX_SIZE][MAX_SIZE], int size) {
+    int sum = 0;
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j <= i; j++) {
+            sum += matrix[i][j];
+        }
+    }
+    return sum;
+}
+
+int main() {
+    int matrix[MAX_SIZE][MAX_SIZE];
+    int size;
+
+    cout << "Enter the size of the square matrix: ";
+    cin >> size;
+
+
+    cout << "Enter the elements of the matrix:" << endl;
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size; j++) {
+            cout << "Enter element at position (" << i + 1 << ", " << j + 1 << "): ";
+            cin >> matrix[i][j];
+        }
+        cout << endl;
+    }
+
+    
+    int sumUpper = sumUpperTriangle(matrix, size);
+    cout << "Sum of upper triangle elements: " << sumUpper << endl;
+
+    
+    int sumLower = sumLowerTriangle(matrix, size);
+    cout << "Sum of lower triangle elements: " << sumLower << endl;
+
+    return 0;
+}
+```
+
+#### Output
+```
+Enter the size of the square matrix: 3
+Enter the elements of the matrix:
+Enter element at position (1, 1): 1
+Enter element at position (1, 2): 2
+Enter element at position (1, 3): 3
+
+Enter element at position (2, 1): 4
+Enter element at position (2, 2): 5
+Enter element at position (2, 3): 6
+
+Enter element at position (3, 1): 7
+Enter element at position (3, 2): 8
+Enter element at position (3, 3): 9
+
+Sum of upper triangle elements: 45
+Sum of lower triangle elements: 45
+```
+
+<hr>
+
+## Question 16
+Write a program to implement the Queue data structure.
+
+#### Code
+``` cpp
+#include<iostream>
+using namespace std;
+
+int queue[10], n = 10, front = -1, rear = -1; 
+
+void Insert(){
+    int val; 
+    if(rear == n-1){
+        cout << "Queue Overflow\n";
+        return;
+    } else if (front == -1){
+        front = 0;
+    }
+    cout << "Insert element in Queue: ";
+    cin >> val; 
+    queue[++rear] = val;
+}
+
+void Delete(){
+    if(front == -1 ){
+        cout << "Queue is empty\n";
+        return;
+    }else if(front > rear){
+        cout << "Queue Underflow\n";
+        return;
+    }else {
+        cout << "Element deleted from queue is: " << queue[front] << endl; 
+        front++;
+    }
+}
+
+void Display(){
+    if(front == -1){
+        cout << "Queue is empty";
+    } else {
+        cout << "Queue elements are: ";
+        for(int i = front; i<=rear; i++){
+            cout << queue[i] << " ";
+        }
+        cout << "\n";
+    }   
+}
+
+int main() {
+    int ch; 
+    cout << "Main Menu:\n===========" << endl;
+    cout << "1. Insert elements in Queue.\n";
+    cout << "2. Delete elements from Queue.\n";
+    cout << "3. Display Queue.\n";
+    cout << "4. Exit\n";
+    do{
+        cout << "Enter your choice: ";
+        cin >> ch; 
+        switch(ch){
+            case 1: 
+                Insert();
+                break; 
+            case 2: 
+                Delete();
+                break; 
+            case 3: 
+                Display();
+                break; 
+            case 4: 
+                cout << "Exiting Program!\n";
+                break;
+            default:
+                cout << "Invalid Input!";
+                break;
+        }
+    }
+    while(ch!=4);
+
+    return 0;
+}
+```
+
+#### Output
+```
+Main Menu:
+===========
+1. Insert elements in Queue.
+2. Delete elements from Queue.
+3. Display Queue.
+4. Exit
+Enter your choice: 1
+Insert element in Queue: 5
+Enter your choice: 1
+Insert element in Queue: 8
+Enter your choice: 3
+Queue elements are: 5 8 
+Enter your choice: 2
+Element deleted from queue is: 5
+Enter your choice: 3
+Queue elements are: 8 
+Enter your choice: 2
+Element deleted from queue is: 8
+Enter your choice: 2
+Queue is empty
+Enter your choice: 4
+Exiting Program!
+```
+
+<hr>
+
+<h1 align = "center"> Thank You!!!!</h1>
