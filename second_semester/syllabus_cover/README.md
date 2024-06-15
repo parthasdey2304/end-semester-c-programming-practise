@@ -69,6 +69,14 @@
 + [Number Systems Playlist 1](https://youtube.com/playlist?list=PLQHpxNhyJUBgQbNCST5jxUN1mPEHMWIiX&si=q81HemneA6w9Hr_N)
 + [Number Systems Playlist 2](https://youtube.com/playlist?list=PLxCzCOWd7aiFOet6KEEqDff1aXEGLdUzn&si=43wMGowEZ0VQaw8B)
 + [Boolean Algebra Playlist](https://youtube.com/playlist?list=PLOwzi3Onol3ohUto0bFlcOk2ho_caRk_j&si=TDkCIoGrs8msMP1H)
++ [Booth's Algorithm Concept](https://youtu.be/meSn0UXmgac?si=I8dwotFXtnA729pt)
++ [Implementation of Booth's Algorithm](https://youtu.be/tnLKU07b-HA?si=jwgr1ExyCWjSJdee)
++ [Multiplication using Booth's Algorithm](https://youtu.be/QFXaddi-Ag8?si=ZaK38O4wNV5rxdAf)
++ [Division using Booth's Algorithm(restoring unsigned Integer)](https://youtu.be/PzV6gYpVLuc?si=9IufocBkhVhpFlxw)
 + [BCD, ASCII, EBCDIC](https://youtu.be/0UVSPwzGw4U?si=Y8GPSE-vIGLEXhxp)
 + [Complete CO Playlist(Number System, One's Complement, 2's Complement, Flip Flops, Registers, Shift Registers, Counters, Encoder, Decoder, Multiplexer, Demultiplexer, Clock)](https://youtube.com/playlist?list=PLBlnK6fEyqRjMH3mWf6kwqiTbT798eAOm&si=QPYk-SbQq5HTX-hp)
 + [Instruction Cycle, Bus, Cache, Data fetch, Memory](https://youtube.com/playlist?list=PLxCzCOWd7aiHMonh3G6QNKq53C6oNXGrX&si=pJLdLVAMQcBq249d)
+
+<hr>
+
+### Principle of System Software
