@@ -1,4 +1,4 @@
-# ESA Syllabus
+# ESA(Sem 2) Syllabus
 ### Maths
 #### Complex Number
 + [Practise Notes](https://drive.google.com/file/d/1xKepaQr7CdhBgxJ8tFRmRjh60_8IPtZV/view)
