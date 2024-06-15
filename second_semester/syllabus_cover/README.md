@@ -22,3 +22,46 @@
 + [Definite Integrals](https://youtu.be/yMAyao2BBAE?si=nC2R7191wJ8mG59X)
 + [Definite Integrals Practise](https://youtu.be/iYEo-NxDnNU?si=Lz1kFic2uPxRhqiK)
 
+#### Statistics
++ [Simple Distribution Ungrouped Data]()
+<hr> 
+
+### Data Structures
+#### Basics
++ [Introduction to Data Structure](https://youtu.be/5_5oE5lgrhw?si=5tSIStdD8RU_SwU0)
+
+#### Linear Sequential Data Structure
++ [Arrays](https://youtu.be/Ql6sJrhCWdg?si=LPMlFbMw5euPFuIk)
++ [Stack](https://youtu.be/_6COl6V6mng?si=p_0DZxWq9vdhQujx)
++ [Queue, Circular Queue and Double Ended Queue](https://youtu.be/W7uB9-TKfTg?si=_XLkEdu1ufxECHsD)
++ [Infix, Prefix, Postfix](https://youtu.be/vtyuftvugXY?si=bkmGUrAWMYwpk5JS)
++ [Operator Precedence](https://youtu.be/hOLAoo2p7gM?si=8cAv2TWVIzr3wf1C)
+
+#### Linear Linked Data Structure
++ [Linked List, Doubly Linked List and Circular Linked List](https://youtu.be/q8gdBn9RPeI?si=e2b2vIrbGuOTl3GS)
++ [Linked Stack](https://youtu.be/b749wwxlQmA?si=Up38ujMtZMSn0Md_)
++ [Linked Queue](https://youtu.be/Yi8Im4_eSQI?si=pjrBgHdLdfqOfDxX)
+
+#### Non-Linear Data Structure
++ [Tree, Binary Search Tree, AVL Tree Playlist](https://youtube.com/playlist?list=PLAuemBFSZV1oE256PESc8ku8MX3xMQYJF&si=crInyduBmxvyjID6)
++ [Binary Tree One Shot(Inorder, Preorder, Postorder)](https://youtu.be/-DzowlcaUmE?si=t-AUT7amvSjZmket)
++ [Binary Search Tree](https://youtu.be/eJiGN1h8XzM?si=oZGWMTSbWUuXrbXB)
++ [Graph Playlist 1](https://youtube.com/playlist?list=PLDzeHZWIZsTobi35C3I-tKB3tRDX6YxuA&si=XqbXsmZRIVVOtAAs)
++ [Graph Playlist 2](https://youtube.com/playlist?list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn&si=H7Savg7F5iL6wY4l)
+
+#### Searching Techniques
++ [Linear Search](https://youtu.be/13ocRMSJy5M?si=_6Z1rIdNQCc1ABYx)
++ [Binar Search](https://youtu.be/ApvI7QUqGzI?si=r_WC84Wew_oN9OWD)
++ [Concept of Hashing](https://youtu.be/0kfM_YEzR94?si=X_f_fTAp4ZlhkJj7)
+
+#### Sorting Techniques
++ [Bubble Sort](https://youtu.be/xcPFUCh0jT0?si=FV6KIqP9pMGu7E4S)
++ [Selection Sort](https://youtu.be/B-nqY6IYqVw?si=Sqx0qbCrRqSb0jNq)
++ [Insertion Sort](https://youtu.be/3GC83dh4cf0?si=fDzg57N2EB_2-iTx)
++ [Merge Sort](https://youtu.be/4z9I6ZmeLOQ?si=PqtuVSwqHnuGcNJg)
++ [Quick Sort](https://youtu.be/Dl6HT-NM_q4?si=Rlrxzcynef3FGkjw)
+
+<hr>
+
+### Computer Organisation
++ [Introduction to Computer Architecture]()
