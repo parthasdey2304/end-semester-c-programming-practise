@@ -64,4 +64,11 @@
 <hr>
 
 ### Computer Organisation
-+ [Introduction to Computer Architecture]()
++ [Introduction to Computer Architecture](https://youtu.be/Ol8D69VKX2k?si=48jv37fnI0m0KM7z)
++ [Von Neuman and Harward Architecture](https://youtu.be/6_PHIL4LZEU?si=2MHf_DmJ8PWx7a40)
++ [Number Systems Playlist 1](https://youtube.com/playlist?list=PLQHpxNhyJUBgQbNCST5jxUN1mPEHMWIiX&si=q81HemneA6w9Hr_N)
++ [Number Systems Playlist 2](https://youtube.com/playlist?list=PLxCzCOWd7aiFOet6KEEqDff1aXEGLdUzn&si=43wMGowEZ0VQaw8B)
++ [Boolean Algebra Playlist](https://youtube.com/playlist?list=PLOwzi3Onol3ohUto0bFlcOk2ho_caRk_j&si=TDkCIoGrs8msMP1H)
++ [BCD, ASCII, EBCDIC](https://youtu.be/0UVSPwzGw4U?si=Y8GPSE-vIGLEXhxp)
++ [Complete CO Playlist(Number System, One's Complement, 2's Complement, Flip Flops, Registers, Shift Registers, Counters, Encoder, Decoder, Multiplexer, Demultiplexer, Clock)](https://youtube.com/playlist?list=PLBlnK6fEyqRjMH3mWf6kwqiTbT798eAOm&si=QPYk-SbQq5HTX-hp)
++ [Instruction Cycle, Bus, Cache, Data fetch, Memory](https://youtube.com/playlist?list=PLxCzCOWd7aiHMonh3G6QNKq53C6oNXGrX&si=pJLdLVAMQcBq249d)
