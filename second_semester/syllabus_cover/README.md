@@ -23,7 +23,7 @@
 + [Definite Integrals Practise](https://youtu.be/iYEo-NxDnNU?si=Lz1kFic2uPxRhqiK)
 
 #### Statistics
-+ [Simple Distribution Ungrouped Data]()
++ [Statistics and Probability Full Covered](https://youtube.com/playlist?list=PLxCzCOWd7aiFjZP4z1_3Kr3m3J5wu5Q8V&si=TDxPep0lziYNnTos)
 <hr> 
 
 ### Data Structures
@@ -80,3 +80,4 @@
 <hr>
 
 ### Principle of System Software
+= [Approximate Syllabus for Principle of System Software](https://chatgpt.com/share/1ec18432-0a3a-4cb0-bf68-fcd751f5fff8)
