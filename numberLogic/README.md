@@ -1,91 +1,64 @@
-
-**Q1. What are the three assumptions of kinetic theory of matter?**  
-**A:**  
-1. Matter is made up of tiny particles called molecules.  
-2. These particles are in constant motion.  
-3. There are spaces between the particles, and they attract each other.
+Here are the answers to your questions in a concise format:
 
 ---
 
-**Q2. What are the factors affecting the states of matter? Explain.**  
-**A:**  
-The two main factors are **temperature** and **pressure**.  
-- Increasing temperature increases the kinetic energy of particles, which can change the state.  
-- Increasing pressure compresses matter, which can also cause a change in state.
+**1. Define the following terms:**  
+**i. Table:** A table is a grid of rows and columns used to organize data in MS Word.  
+**ii. Cell:** A cell is the intersection of a row and a column in a table where data is entered.
 
 ---
 
-**Q3. On the basis of kinetic theory of matter, explain:**  
-- **Why solids have a definite volume and definite shape**  
-- **Why liquids have a definite volume and no definite shape**  
-- **Why gases have no definite volume and no definite shape**  
-
-**A:**  
-- **Solids:** Particles are tightly packed with strong forces between them, so they have a fixed shape and volume.  
-- **Liquids:** Particles are close together but can move around, so they have fixed volume but take the shape of the container.  
-- **Gases:** Particles are far apart and move freely, so they have neither a fixed shape nor a fixed volume.
+**2. Write the actions for the following selection for the table:**  
+**i. Cell:** Click inside the cell.  
+**ii. Rows:** Click on the left margin next to the row.  
+**iii. Column:** Move the cursor above the column until it becomes a black arrow, then click.  
+**iv. Entire Table:** Click the table move handle (a small square with a four-sided arrow at the top-left corner).
 
 ---
 
-**Q4. Write the physical state of matter that shows the property given:**  
-**A:**  
-- **Rigid and incompressible:** Solid  
-- **Most compressible form of matter:** Gas  
-- **Have definite volume but no fixed shape:** Liquid  
-- **Has largest inter-particle space but weakest form of attraction:** Gas
+**3. What are the four ways you can create a table in MS Word?**  
+1. Using the **Insert Table** button from the Insert tab.  
+2. Drawing a table using the **Draw Table** tool.  
+3. Converting text to table.  
+4. Inserting a **Quick Table** from built-in templates.
 
 ---
 
-**Q5. Explain the following on the basis of the kinetic theory of matter:**  
-- **Sublimation**  
-- **Melting**  
-- **Boiling**
-
-**A:**  
-- **Sublimation:** Some solids gain enough energy for their particles to escape directly into the gas phase.  
-- **Melting:** Solid particles absorb heat, vibrate faster, and become loosely held, turning into liquid.  
-- **Boiling:** Liquid particles gain enough energy to overcome attraction and change into gas.
+**4. What are the two ways we can insert rows and columns?**  
+1. Using the **Layout tab** → Insert Above/Below (for rows), Insert Left/Right (for columns).  
+2. **Right-clicking** on a row or column and selecting Insert from the context menu.
 
 ---
 
-**Q6. Tabulate the differences in the characteristics of states of matter:**  
-
-| State   | Shape      | Volume        | Compressibility        |
-|---------|------------|---------------|-------------------------|
-| Solid   | Fixed      | Fixed         | Not compressible        |
-| Liquid  | Not fixed  | Fixed         | Slightly compressible   |
-| Gas     | Not fixed  | Not fixed     | Highly compressible     |
+**5. Write the difference between Splitting and Merging:**  
+- **Splitting** divides one cell into multiple cells.  
+- **Merging** combines two or more cells into one.
 
 ---
 
-**Q7. Discuss briefly the effects of temperature on the change of state of a solid into a liquid and that of a liquid into a gas.**  
-**A:**  
-- **Solid to liquid (melting):** Heat increases particle movement, breaking strong bonds, and turning the solid into a liquid.  
-- **Liquid to gas (boiling/evaporation):** Further heating makes particles move faster and break free into the gas phase.
+**6. Define Autofit:**  
+Autofit is a feature that automatically adjusts the column width or row height to fit the content or window size.
 
 ---
 
-**Q8. List the basic changes of states of matter:**  
-**A:**  
-1. Melting  
-2. Freezing  
-3. Vaporization  
-4. Condensation  
-5. Sublimation  
-6. Deposition
+**7. What are the three ways we can use Autofit in MS Word?**  
+1. **AutoFit to Contents** – adjusts columns based on content.  
+2. **AutoFit to Window** – adjusts table size to fit the page width.  
+3. **Fixed Column Width** – keeps column width constant.
 
 ---
 
-**Q9. Show in a flowchart the complete cycle of change in state:**  
-**A:**  
-```
-Solid <-> Liquid <-> Gas
-       ^             |
-       |             v
-        <---------->  
-         (Sublimation and Deposition)
-```
-
-Processes involved: Melting, Freezing, Boiling, Condensation, Sublimation, Deposition
+**8. Write two differences between Table Move Handle and Table Resize Handle:**  
+| Feature                | Table Move Handle                        | Table Resize Handle                         |
+|------------------------|-------------------------------------------|----------------------------------------------|
+| Function               | Moves the entire table                   | Changes the overall size of the table        |
+| Location               | Top-left corner of the table             | Bottom-right corner of the table             |
 
 ---
+
+**9. What is the function of Align?**  
+Align controls the placement of text inside a cell (top, center, bottom, left, right, etc.).
+
+---
+
+Would you like these answers formatted into a printable note or PDF?
